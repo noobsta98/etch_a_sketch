@@ -1,0 +1,60 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+}
+
+*,
+*::after,
+*::before{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  /* outline: 1px solid black; */
+}
+
+body{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.header-div{
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.etch-a-sketch{
+  height: 600px;
+  width: 750px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+  /* flex: 1; */
+}
+
+
+
