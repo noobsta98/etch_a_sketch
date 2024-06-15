@@ -41,9 +41,11 @@ document.addEventListener('DOMContentLoaded', () =>{
   const resetBtn = document.querySelector('.reset');
   resetBtn.addEventListener('click', () =>{
     let newEtch = '';
-    while(!newEtch || isNaN(newEtch || newEtch < 0 || newEtch > 100)){
-      newEtch = prompt('Enter new dimensions');
+    while(!newEtch || isNaN(newEtch) || newEtch < 0 || newEtch > 100){
+      if(newEtch === null) return;
+      newEtch = prompt('Enter new dimensions(Positive numbers <= 100)');
     }
+    newEtch = Number(newEtch);
     ungrid();
     grid(newEtch);  
   });
